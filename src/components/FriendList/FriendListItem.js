@@ -1,16 +1,18 @@
 import PropTypes from 'prop-types';
-import { FrendItemStyles } from './FriendListStyles';
-// import { VisitStyles } from './FriendListStyles';
+import { StatusFriend } from './FriendListStyles';
+import { ItemFriends } from './FriendListStyles';
+import { AvatarFriends } from './FriendListStyles';
+import { AvatarName } from './FriendListStyles';
 
 export const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
-    <FrendItemStyles>
-      <li className="item">
+    <StatusFriend>
+      <ItemFriends>
         <span id={isOnline ? 'online' : 'notonline'}>{isOnline}</span>
-        <img className="avatar" src={avatar} alt="User avatar" width="48" />
-        <p className="name">{name}</p>
-      </li>
-    </FrendItemStyles>
+        <AvatarFriends src={avatar} alt="User avatar" width="48" />
+        <AvatarName>{name}</AvatarName>
+      </ItemFriends>
+    </StatusFriend>
   );
 };
 

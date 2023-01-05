@@ -7,7 +7,6 @@ import friends from '../data/friends';
 import users from '../data/users';
 import data from '../data/data';
 
-// ffff
 export const App = () => {
   return (
     <>

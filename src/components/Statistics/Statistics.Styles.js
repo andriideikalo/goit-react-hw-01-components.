@@ -21,7 +21,11 @@ export const StatStyles = styled.div`
     font-weight: 700;
     text-transform: uppercase;
   }
-
+  ul {
+    padding: 0;
+  }
+`;
+export const StatItem = styled.ul`
   .stat-list {
     padding: 0;
     display: flex;

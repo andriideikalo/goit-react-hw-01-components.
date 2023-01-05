@@ -1,29 +1,32 @@
 import styled from '@emotion/styled';
 
-export const TransHistStyles = styled.div`
+export const TableTransHistStyles = styled.div`
   margin: 50px;
   margin-bottom: 20px;
   width: 400px;
+`;
+export const BackgroundTabl = styled.tr`
+  background-color: #fff;
 
-  th,
-  td {
-    text-align: center;
-    border: 1px solid black;
-    width: 150px;
-  }
-  th {
-    background-color: #00bcd5;
-    color: white;
-    width: 30px;
-  }
-  tr {
-    background-color: #fff;
-  }
-  tr:nth-of-type(even) {
+  :nth-of-type(even) {
     background-color: #ecf1f3;
   }
-  tr:hover {
+  :hover {
     background-color: orange;
     font-weight: 800;
   }
+`;
+export const HeaderTabl = styled.th`
+  background-color: #00bcd5;
+  color: white;
+  width: 30px;
+  text-align: center;
+  border: 1px solid black;
+  width: 150px;
+`;
+export const BodyTabl = styled.th`
+  text-align: center;
+  font-weight: 400;
+  border: 1px solid black;
+  width: 150px;
 `;

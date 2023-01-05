@@ -24,67 +24,61 @@ export const ProfStyles = styled.div`
   }
 `;
 export const DescriptionStyles = styled.div`
-  .description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  .avatar {
-    display: block;
-    width: 300px;
-    border-radius: 50%;
-    margin-bottom: 30px;
-  }
-  .name {
-    font-weight: 800;
-    margin-bottom: 10px;
-  }
-
-  .tag {
-    font-weight: 800;
-    color: blue;
-    cursor: pointer;
-    margin-bottom: 10px;
-  }
-
-  .location {
-    color: grey;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
   p {
     margin: 0;
   }
 `;
 
 export const StatsStyles = styled.ul`
-  .stats {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+`;
 
-  .stats > li {
-    padding: 10px;
-    width: 100px;
-    border: 1px solid #e7ecf2;
-    background-color: #f3f6f9;
-  }
-
-  .label {
-    display: block;
-    font-size: 18px;
-    text-align: center;
-    padding-bottom: 10px;
-    cursor: pointer;
-    color: grey;
-  }
-  .quantity {
-    display: block;
-    font-weight: 800;
-    text-align: center;
-    cursor: pointer;
-  }
+export const Avatar = styled.img`
+  display: block;
+  width: 300px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+`;
+export const Tag = styled.p`
+  font-weight: 800;
+  color: blue;
+  cursor: pointer;
+  padding-bottom: 10px;
+`;
+export const Location = styled.p`
+  color: grey;
+`;
+export const Name = styled.p`
+  font-weight: 800;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+`;
+export const Quantity = styled.span`
+  display: block;
+  font-weight: 800;
+  text-align: center;
+  cursor: pointer;
+`;
+export const Label = styled.span`
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 10px;
+  cursor: pointer;
+  color: grey;
+`;
+export const StatsItem = styled.li`
+  padding: 10px;
+  width: 100px;
+  border: 1px solid #e7ecf2;
+  background-color: #f3f6f9;
 `;

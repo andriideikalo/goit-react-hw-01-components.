@@ -3,36 +3,37 @@ import PropTypes from 'prop-types';
 import { ProfStyles } from './Profile.Styles';
 import { DescriptionStyles } from './Profile.Styles';
 import { StatsStyles } from './Profile.Styles';
+import { Avatar } from './Profile.Styles';
+import { Tag } from './Profile.Styles';
+import { Location } from './Profile.Styles';
+import { Name } from './Profile.Styles';
+import { Quantity } from './Profile.Styles';
+import { Label } from './Profile.Styles';
+import { StatsItem } from './Profile.Styles';
 
 export const Profile = ({ users }) => {
   return (
     <ProfStyles>
-      <div className="profile">
-        <DescriptionStyles>
-          <div className="description">
-            <img src={users.avatar} alt="User avatar" className="avatar" />
-            <p className="name">{users.username}</p>
-            <p className="tag">@{users.tag}</p>
-            <p className="location">{users.location}</p>
-          </div>
-        </DescriptionStyles>
-        <StatsStyles>
-          <ul className="stats">
-            <li>
-              <span className="label">Followers </span>
-              <span className="quantity">{users.stats.followers}</span>
-            </li>
-            <li>
-              <span className="label">Views </span>
-              <span className="quantity">{users.stats.views}</span>
-            </li>
-            <li>
-              <span className="label">Likes </span>
-              <span className="quantity">{users.stats.likes}</span>
-            </li>
-          </ul>
-        </StatsStyles>
-      </div>
+      <DescriptionStyles>
+        <Avatar src={users.avatar} alt="User avatar" className="avatar" />
+        <Name>{users.username}</Name>
+        <Tag>@{users.tag}</Tag>
+        <Location>{users.location}</Location>
+      </DescriptionStyles>
+      <StatsStyles>
+        <StatsItem>
+          <Label>Followers </Label>
+          <Quantity>{users.stats.followers}</Quantity>
+        </StatsItem>
+        <StatsItem>
+          <Label>Views </Label>
+          <Quantity>{users.stats.views}</Quantity>
+        </StatsItem>
+        <StatsItem>
+          <Label>Likes </Label>
+          <Quantity>{users.stats.likes}</Quantity>
+        </StatsItem>
+      </StatsStyles>
     </ProfStyles>
   );
 };

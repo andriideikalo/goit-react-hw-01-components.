@@ -118,8 +118,8 @@
     "type": "payment",
     "amount": "405.45",
     "currency": "MDL"
-  }
-    {/
+  },
+    {
     "id": "b39bfa7a-0166-4c47-94d6-87d20590f800",
     "type": "Tanya",
     "amount": "555",
